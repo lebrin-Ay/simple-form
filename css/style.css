@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+    color: #222;
+    font-size: 13px;
+    font-family: Poppins;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    height: 602px;
+    background-color: #ffff;
+    margin-top: 5rem;
+    padding: 3.5rem;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    width: 367px;
+    margin-bottom: 1rem;
+    color: #3F3D56;
+    margin-left: 4rem;
+}
+
+.form-group input {
+    width: 300px;
+    border: none; 
+    outline-color: #999999;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 7px;
+}
+
+select {
+    margin-left: .5rem;
+    border: none;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 1.5rem;
+}
+
+.input-focus:focus {
+    border-color: transparent;
+    margin-left: .6rem;
+    cursor: auto;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    font-weight: bold;
+}
+
+.btn-register {
+    background-color: #1266F1;
+    margin-top: 2rem;
+    color: #fff;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-register:hover {
+    cursor: pointer;
+    background-color: #1651b1;
+    transform: scale(1.1);
+}
+
+/* Right side */
+img {
+    padding-top: 4rem;
+    width: 500px;
+    padding-right: 4.5rem;
+    position: relative;
+    right: 2rem;
+}
+
+/* Media queries */
+/*small devices only */
+@media(min-width: 768px) and (max-width: 991px) {
+    .container {
+       flex-direction: column-reverse;
+       width: 400px;
+       height: 900px;
+    }
+    img {
+        right: 2.5rem;
+    }
+}
+
+/*extra small devices only */
+@media(max-width: 767px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 900px;
+
+    }
+
+    img {
+        right: 2.5rem;
+    }
+}
